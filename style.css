@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
 
 .menu-container {
@@ -25,6 +25,11 @@
 
 .login {
     margin-left: 20px;
+}
+
+/*flex items and auto-margins*/
+.signup {
+    margin-left: auto;
 }
 
 .header-container {
@@ -53,13 +58,11 @@
     /* NOTE: it won't work because flex-direction is now Column*/
     justify-content: center;  
     flex-direction: row; /*default direction*/
-    /* align-items: center; */
+    align-items: center;
     flex-wrap: wrap;
-
 }
 
 .photo-gird-item {
-    border: 1px solid #fff;
     width: 900px;
     height: 300px;
 }
@@ -76,11 +79,32 @@
 
 /*flex-item alignment*/
 
-.social,
+/* .social,
 .subscribe {
     align-self: flex-end;
     margin-bottom: 20px;
-}
+} */
 
 /*flexible item*/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item {
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;
+}
+
+.footer-1,
+.footer-3 {
+    background-color: #5995da;
+    flex: initial;
+    width: 300px;
+}
+
+
 
